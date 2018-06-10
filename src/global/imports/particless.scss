@@ -1,0 +1,14 @@
+/* ##### particless CSS ##### */
+
+#particles-js {
+  height: 900px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#particles-js canvas.particles-js-canvas-el {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}

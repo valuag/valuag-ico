@@ -1,0 +1,143 @@
+/*
+* ----------------------------------------------------------------------------------------
+*  START Subscribe STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe .section-heading>p {
+  color: #eee
+}
+
+.subscribe:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url('../img/core-img/wave-shap.png') no-repeat center center;
+  background-size: contain;
+  opacity: .5
+}
+
+.subscribe .section-heading {
+  margin-bottom: 30px
+}
+
+.subscribe .service-text {
+  padding-top: 0
+}
+
+.subscribe .title-box {
+  margin-bottom: 30px
+}
+
+.subscribe-wrapper {
+  padding: 60px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: #1d66f6;
+  box-shadow: 0 10px 80px rgba(15, 62, 153, .3);
+}
+
+.telegram-text {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  z-index: 2
+}
+
+.social-list {
+  display: inline-block;
+  margin-bottom: 0;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.social-list li {
+  float: left;
+  padding: 0 14px
+}
+
+.social-list li a {
+  font-size: 34px;
+  color: #fff;
+  opacity: .8
+}
+
+.social-list li a:hover {
+  opacity: 1
+}
+
+.subscribe .buy-tokens i {
+  margin-right: 10px
+}
+
+.subscribe .dream-btn {
+  position: absolute;
+  top: -2px;
+  right: -10px;
+  min-width: 48px;
+  height: 48px;
+  padding: 0;
+  border-color: #fff;
+}
+
+.subscribe .dream-btn:hover {
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 16px;
+  z-index: 2;
+  line-height: 1.25;
+  color: #25cbd3;
+  background: #fff;
+  border: 0 solid;
+  border-radius: 40px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+  box-shadow: 0 3px 21px 4px rgba(41, 41, 58, 0.2);
+}
+
+.button:hover {
+  background: #25cbd3;
+  color: #fff
+}
+
+.button i {
+  margin-right: 10px
+}
+
+/* ##### Subscribe form area CSS ##### */
+
+.welcome-content .subscribe-email {
+  width: 70%;
+  height: 55px;
+  border: none;
+  padding: 0 25px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-style: italic;
+}

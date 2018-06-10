@@ -1,0 +1,76 @@
+/* ##### Footer Area ##### */
+
+.footer-area {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+
+.footer-content-area {
+  padding: 80px 0;
+  margin-top: 100px
+}
+
+.footer-logo {
+  margin-bottom: 15px
+}
+
+.footer-logo a {
+  color: #fff;
+  font-size: 20px
+}
+
+.footer-logo img {
+  width: 40px
+}
+
+.footer-side-thumbnail {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.copywrite_text>p {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.copywrite_text>p>a {
+  color: #fff;
+}
+
+.footer-social-info a i {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 15px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.footer-social-info a i:hover {
+  color: #4a7aec;
+}
+
+.contact_info_area .contact_info {
+  text-align: left !important;
+}
+
+.contact_info_area .contact_info h5 {
+  font-size: 14px;
+}
+
+.contact_info_area .contact_info p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact_info_area .contact_info a:hover p {
+  color: #fff
+}

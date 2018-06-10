@@ -1,0 +1,139 @@
+/* ##### 14.0 Our Blog Area CSS ##### */
+
+.single-blog-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px;
+}
+
+.post-meta p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.post-meta p a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.post-title {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.blog_thumbnail img {
+  width: 100%;
+}
+
+.single-blog-area blockquote {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 3px;
+  margin: 30px 0;
+  display: block;
+}
+
+.single-blog-area blockquote span {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.comment_area {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.comment_area .title {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .comment_area .comment-content {
+    padding: 20px 15px;
+  }
+}
+
+.comment_area .comment-content .comment-author {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 79px;
+  flex: 0 0 79px;
+  min-width: 79px;
+  margin-right: 55px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .comment_area .comment-content .comment-author {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    min-width: 60px;
+    margin-right: 15px;
+  }
+}
+
+.comment_area .comment-content .comment-author img {
+  border-radius: 50%;
+}
+
+.comment_area .comment-content .comment-meta {
+  margin-bottom: 30px;
+}
+
+.comment_area .comment-content .comment-meta .post-date {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.comment_area .comment-content .comment-meta .post-author {
+  margin-bottom: 15px;
+  display: block;
+  color: #fff;
+}
+
+.comment_area .comment-content .comment-meta p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+}
+
+.comment_area .comment-content .comment-meta .comment-reply {
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.comment_area .single_comment_area {
+  margin-bottom: 30px;
+}
+
+.comment_area .single_comment_area:last-of-type {
+  margin-bottom: 0;
+}
+
+.comment_area .children .single_comment_area {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .comment_area .children .single_comment_area {
+    margin-left: 15px;
+  }
+}
+
+.single_comment_area .children .single_comment_area .comment-meta {
+  margin-bottom: 0;
+}

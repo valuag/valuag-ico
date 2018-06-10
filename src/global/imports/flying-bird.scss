@@ -1,0 +1,28 @@
+/* ##### Flying Bird CSS ##### */
+
+.bird {
+  background-size: cover;
+  width: 352px;
+  height: 500px;
+  -webkit-animation: fly-cycle 1s -0.5s steps(10) infinite;
+  animation: fly-cycle 1s -0.5s steps(10) infinite;
+}
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -3600px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -3600px 0;
+  }
+}
+
+.bird {
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  z-index: -1;
+}

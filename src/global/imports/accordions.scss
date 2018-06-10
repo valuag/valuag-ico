@@ -1,0 +1,24 @@
+/* ##### Accordians CSS ##### */
+
+.dream-faq-area dl {
+  width: 100%;
+}
+
+.dream-faq-area dt {
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.dream-faq-area dt:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dream-faq-area dd {
+  margin: 0;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,47 @@
+/* ##### Button Effects ##### */
+
+.ripple {
+  position: absolute;
+  height: .25em;
+  width: .25em;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  z-index: -1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform-origin: center 50%;
+  transform-origin: center 50%;
+  -webkit-transition: opacity 1.6s;
+  transition: opacity 1.6s;
+  -webkit-animation: ripple 1.6s;
+  animation: ripple 1.6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.ripple-active {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale3d(50, 50, 50);
+    transform: scale3d(50, 50, 50);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale3d(50, 50, 50);
+    transform: scale3d(50, 50, 50);
+  }
+}

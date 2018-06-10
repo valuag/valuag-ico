@@ -1,0 +1,127 @@
+/* ##### Timeline CSS ##### */
+
+.timelineBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.timelineHeader {
+  padding: 32px;
+  padding: 32px;
+  padding: 2rem;
+  background: #e91e63;
+  position: relative;
+  z-index: 3;
+}
+
+.timelineHeader h3 {
+  font-size: 32px;
+  font-size: 32px;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.timelineHeader h3+span {
+  font-size: 19.2px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.timelineBody {
+  max-height: 480px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.timelineBody .timeline {
+  padding: 2em;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 2;
+}
+
+.timelineBody .timeline li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 1em 0;
+  position: relative;
+}
+
+.timelineBody .timeline li:before {
+  position: absolute;
+  content: '';
+  left: 7px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #25cbd3
+}
+
+.timelineBody .timeline li:last-child {
+  margin-bottom: 0;
+}
+
+.timelineBody .timeline .timelineDot {
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  border-radius: 2rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  margin-right: auto;
+  margin-top: 6px;
+  box-shadow: 0 0 8px #56cb5f;
+}
+
+.timelineBody .timeline .timelineDot:after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 3px;
+  height: 9px;
+  width: 9px;
+  background: #25cbd3;
+  border-radius: 50%;
+}
+
+.timelineBody .timeline .timelineDate {
+  font-size: 14px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+  padding: 0;
+}
+
+.timelineBody .timeline .timelineDate p {
+  color: #25cbd3;
+}
+
+.timelineBody .timeline .timelineWork {
+  font-size: 16px;
+  margin-left: auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+}
+
+.timelineBody .timeline .timelineWork h6 {
+  color: #fff;
+}
+
+.timelineBody .timeline .timelineWork span {
+  display: block;
+  color: #bdbdbd;
+  font-size: 13px;
+}

@@ -1,0 +1,97 @@
+/* ##### Contact Area CSS ##### */
+
+.group {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.group input,
+.group textarea {
+  font-size: 12px;
+  font-style: italic;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.group input:focus,
+.group textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.group label {
+  color: #fff;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 14px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  margin-bottom: 0;
+}
+
+.group .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.group .bar:before,
+.group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #fff;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.group .bar:before {
+  left: 50%;
+}
+
+.group .bar:after {
+  right: 50%;
+}
+
+.group textarea {
+  height: 130px;
+}
+
+/* Form Active State */
+
+.group input:focus~label,
+.group textarea:focus~label,
+.group input:valid~label,
+.group textarea:valid~label {
+  top: -17px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.group input:focus~.bar:before,
+.group textarea:focus~.bar:before,
+.group input:focus~.bar:after,
+.group textarea:focus~.bar:after {
+  width: 50%;
+  background-color: #fff;
+}
+
+input:required,
+textarea:required {
+  box-shadow: none !important;
+}

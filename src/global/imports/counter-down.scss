@@ -1,0 +1,231 @@
+/*
+* ----------------------------------------------------------------------------------------
+*  START counter-down STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.ico-counter {
+  background-image: linear-gradient(to right, #21d397 0%, #7450fe 100%);
+  padding: 40px;
+  border-radius: 20px
+}
+
+@media (max-width: 767px) {
+  .ico-counter {
+    margin-top: 30px;
+  }
+}
+
+.counter-down {
+  position: relative;
+}
+
+.conuter-header {
+  overflow: hidden;
+  position: relative;
+}
+
+.timer-body-block {
+  display: flex
+}
+
+.count-down .table-cell {
+  position: relative;
+  width: 25%
+}
+
+.count-down .tab-val {
+  width: 90%;
+  font-size: 30px;
+  font-weight: 500;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 auto;
+  background-color: #190345;
+  color: #ffffff;
+}
+
+.count-down .tab-metr {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.conuter-header h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff
+}
+
+.conuter-header h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.counterdown-content {
+  padding: 30px 0 0;
+}
+
+.clock-wrapper {
+  position: relative;
+  background: #fff;
+  padding: 30px 0 15px 9px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid
+}
+
+.dollar-earning {
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.btc-earning {
+  font-size: 24px;
+  font-weight: 600;
+  padding-right: 45px;
+  color: #fff;
+  position: relative;
+}
+
+.ico-sales-status {
+  overflow: hidden;
+}
+
+.ico-sales-status p {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.62)
+}
+
+.btc-earning span {
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+
+.ico-progress {
+  margin: 20px 10px;
+}
+
+.ico-progress ul {
+  margin-bottom: 5px
+}
+
+.ico-progress li {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ico-progress li.title {
+  float: left;
+  padding-left: 30px;
+  font-weight: 500;
+  color: #fff
+}
+
+.ico-progress li.strength {
+  float: right;
+  font-weight: 500;
+  color: #fff
+}
+
+.ico-progress .current-progress {
+  width: 100%;
+  height: 16px;
+  position: relative;
+  background: rgba(191, 191, 191, .6);
+  border-radius: 7px
+}
+
+.ico-progress .current-progress:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 26px;
+  bottom: -5px;
+  left: 12%;
+  background: #fff
+}
+
+.current-progress .progress-bar {
+  border-radius: 7px;
+  height: 100%;
+  background: linear-gradient(to right, #4834d4, #341f97)
+}
+
+.ico-progress span {
+  color: #370779;
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 7px;
+  display: inline-block;
+}
+
+.doc-element {
+  background-color: #1d025c;
+  border-radius: 4px;
+  border-bottom: 2px solid #25cbd3;
+  position: relative;
+  transition: .5s;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 20px;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.doc-element:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  transition: .3s;
+  right: 15px;
+  width: 27px;
+  height: 34px;
+  background: url(../img/svg/pdf.svg) 50% no-repeat;
+  background-size: contain;
+}
+
+.doc-element:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  transition: .3s;
+  right: 15px;
+  width: 27px;
+  height: 30px;
+  background: url(../img/svg/view.svg) 50% no-repeat;
+  background-size: contain;
+  opacity: 0;
+}
+
+.doc-element .document-entry .title {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.doc-element:hover {
+  background-color: #25cbd3;
+}
+
+.doc-element:hover:after {
+  opacity: 1;
+}

@@ -1,0 +1,154 @@
+/* ##### Light Version CSS ##### */
+
+body.light-version {
+  background: #fff !important;
+}
+
+.light-version p {
+  color: #888;
+}
+
+.light-version h1,
+.light-version h2,
+.light-version h3,
+.light-version h4,
+.light-version h5,
+.light-version h6,
+.light-version .growing-company p .counter,
+.light-version .service_single_content .service_icon i,
+.light-version .portfolio-menu button,
+.light-version .post-meta p a,
+.light-version .group label,
+.light-version input:focus~label,
+.light-version textarea:focus~label,
+.light-version input:valid~label,
+.light-version textarea:valid~label,
+.light-version .copywrite_text>p>a {
+  color: #222;
+}
+
+.light-version .dream-faq-area dt {
+  color: #222;
+  border-bottom: 1px solid #f2f4f8;
+}
+
+.light-version .dream-faq-area dt:first-child {
+  border-top: 1px solid #f2f4f8;
+}
+
+.light-version .timelineBox {
+  background: #f2f4f8;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.light-version .single-mission h6,
+.light-version .single-mission p,
+.light-version .welcome-content h2,
+.light-version .welcome-content p,
+.light-version .cool_fact_detail h3,
+.light-version .cool_fact_detail h2,
+.light-version .cta-content h2,
+.light-version .cta-content p {
+  color: #fff;
+}
+
+.light-version .portfolio-menu button.active {
+  color: #222;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.light-version .single-team-member:after {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f2f4f8;
+  content: "";
+  z-index: -5;
+}
+
+.light-version .footer-social-info a i,
+.light-version #scrollUp {
+  color: #000;
+}
+
+.light-version #scrollUp:before {
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  top: 10px;
+  right: 100%;
+  z-index: -200 !important;
+}
+
+.light-version .group input,
+.light-version .group textarea {
+  color: #222 !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.light-version .group input:focus~.bar:before,
+.light-version .group textarea:focus~.bar:before,
+.light-version .group input:focus~.bar:after,
+.light-version .group textarea:focus~.bar:after {
+  background-color: #222;
+}
+
+.light-version .client_slides .owl-dot {
+  color: #222;
+  background-color: transparent;
+}
+
+.light-version .client_slides .owl-dot.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* demo page */
+
+.demo-item {
+  -webkit-box-shadow: 0 2px 28px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 28px rgba(0, 0, 0, .1);
+  transition: all .3s ease-in;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 30px
+}
+
+@media (min-width: 1200px) {
+  .demo .container {
+    max-width: 1280px;
+  }
+}
+
+.demo-item:hover {
+  -webkit-box-shadow: 0 1px 28px rgba(255, 152, 0, .66);
+  box-shadow: 0 1px 28px rgba(255, 152, 0, .66);
+  transform: translate(0, -9px);
+  -webkit-transform: translate(0, -9px);
+}
+
+.preview-link {
+  text-align: center;
+}
+
+.preview-demo {
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  width: 100%;
+  font-weight: 700;
+  color: #673AB7;
+  text-transform: uppercase;
+  border: 1px solid #673AB7;
+}
+
+.preview-demo i {
+  margin-left: 10px
+}
+
+.preview-demo:hover {
+  color: #333
+}
