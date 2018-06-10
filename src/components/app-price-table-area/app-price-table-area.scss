@@ -1,0 +1,41 @@
+/* ##### 11.0 Price Table Area CSS ##### */
+
+.single_price_table_content {
+  padding: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  border-radius: 6px;
+}
+
+.single_price_table_content.active {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.price_table_text {
+  margin-bottom: 45px;
+}
+
+.price_table_text>h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.price_table_text>h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.price_table_text>p,
+.table_text_details>p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.table_text_details>p {
+  margin-bottom: 20px;
+}

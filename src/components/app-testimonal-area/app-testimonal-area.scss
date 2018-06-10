@@ -1,0 +1,68 @@
+/* ##### 12.0 testimonial Area CSS ##### */
+
+.testimonial-description {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  text-align: center;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.testimonial_image {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+.testimonial_image>img {
+  border-radius: 50%;
+}
+
+.testimonial_text>p {
+  font-weight: 500;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.admin_text>h5 {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.admin_text>p {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.client_slides .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.client_slides .owl-dot {
+  margin: 0 5px;
+  line-height: 1;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.client_slides .owl-dot.active {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}

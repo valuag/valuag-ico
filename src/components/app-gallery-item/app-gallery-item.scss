@@ -1,0 +1,66 @@
+/* ##### 9.0 Gallry Item Area CSS ##### */
+
+.single_gallery_item {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-bottom: 30px;
+}
+
+.gallery-hover-overlay {
+  position: absolute;
+  width: calc(100% - 30px);
+  height: 100%;
+  top: 0;
+  left: 15px;
+  z-index: 10;
+  background-color: rgba(72, 52, 212, 0.8);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  visibility: hidden;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  padding: 30px;
+  text-align: center;
+}
+
+.single_gallery_item:hover .gallery-hover-overlay {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  visibility: visible;
+}
+
+.portfolio-menu button {
+  line-height: 1;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 15px 5px;
+  border-radius: 30px;
+}
+
+.portfolio-menu button.active {
+  color: #fff;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.port-more-view>a {
+  color: #fff;
+}
+
+.port-hover-text h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.port-hover-text>a {
+  font-size: 12px;
+  color: #fff;
+  text-transform: capitalize;
+}

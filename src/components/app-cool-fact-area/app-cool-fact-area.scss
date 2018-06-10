@@ -1,0 +1,34 @@
+/* ##### 10.0 Cool Fact Area CSS ##### */
+
+.cool-facts-area {
+  padding: 100px 0 70px;
+}
+
+.single_cool_fact {
+  position: relative;
+  z-index: 1;
+  background: #0d003b;
+  border: 1px solid #25cbd3;
+  border-bottom: 3px solid #25cbd3;
+  border-radius: 0 0 20px 20px;
+  padding: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.cool_fact_icon i {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.cool_fact_detail h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.cool_fact_detail h2 {
+  font-size: 12px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}

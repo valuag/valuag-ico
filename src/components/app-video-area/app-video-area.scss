@@ -1,0 +1,35 @@
+.demo-video {
+  position: relative;
+}
+
+.demo-video .welcome-video-area {
+  margin-top: 0
+}
+
+/* ##### 7.0 Video Area CSS ##### */
+
+.mfp-wrap {
+  z-index: 6000;
+}
+
+.mfp-bg {
+  z-index: 5500;
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  right: 0;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  padding-right: 0;
+}
+
+.mfp-iframe-holder .mfp-close {
+  top: 0;
+}

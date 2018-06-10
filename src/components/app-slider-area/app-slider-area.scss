@@ -1,0 +1,28 @@
+/* ##### Slider Area CSS ##### */
+
+.welcome_area .welcome_slides .owl-prev,
+.welcome_area .welcome_slides .owl-next {
+  color: #fff;
+  font-size: 24px;
+  left: -100px;
+  margin-top: -44px;
+  position: absolute;
+  text-align: center;
+  top: calc(50% + 90px);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  z-index: 99;
+}
+
+.welcome_area .welcome_slides .owl-next {
+  right: -100px;
+  left: auto;
+}
+
+.welcome_area .welcome_slides:hover .owl-next {
+  right: 30px;
+}
+
+.welcome_area .welcome_slides:hover .owl-prev {
+  left: 30px;
+}
