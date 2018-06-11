@@ -2459,7 +2459,7 @@ express@4.16.2:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-express@^4.16.2, express@^4.16.3:
+express@4.16.3, express@^4.16.2:
   version "4.16.3"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.3.tgz#6af8a502350db3246ecc4becf6b5a34d22f7ed53"
   dependencies:
@@ -2671,7 +2671,7 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-firebase-admin@^5.12.1:
+firebase-admin@5.12.1:
   version "5.12.1"
   resolved "https://registry.yarnpkg.com/firebase-admin/-/firebase-admin-5.12.1.tgz#a815f4a51ada85e9fd9902c3659d01759e5f8556"
   dependencies:
@@ -2684,7 +2684,7 @@ firebase-admin@^5.12.1:
     jsonwebtoken "8.1.0"
     node-forge "0.7.4"
 
-firebase-functions@^1.0.4:
+firebase-functions@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-1.0.4.tgz#3302d9234de6d708fd8cb24aa5db872cc8953919"
   dependencies:
