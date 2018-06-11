@@ -1,7 +1,8 @@
 import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'app-faq-area'
+  tag: 'app-faq-area',
+  styleUrl: 'app-faq-area.scss'
 })
 export class AppFaqArea {
   render() {

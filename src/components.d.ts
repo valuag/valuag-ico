@@ -135,6 +135,39 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface AppDashboard {
+
+    }
+  }
+
+  interface HTMLAppDashboardElement extends StencilComponents.AppDashboard, HTMLStencilElement {}
+
+  var HTMLAppDashboardElement: {
+    prototype: HTMLAppDashboardElement;
+    new (): HTMLAppDashboardElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-dashboard': HTMLAppDashboardElement;
+  }
+  interface ElementTagNameMap {
+    'app-dashboard': HTMLAppDashboardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-dashboard': JSXElements.AppDashboardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppDashboardAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface AppFaqArea {
 
     }

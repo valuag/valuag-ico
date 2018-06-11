@@ -1,7 +1,8 @@
 import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'app-welcome'
+  tag: 'app-welcome',
+  styleUrl: 'app-welcome.scss'
 })
 export class AppWelcome {
   render() {
@@ -56,7 +57,27 @@ export class AppWelcome {
                             </div>
                           </div>
                           <div class="count-down titled circled text-center">
-                            <div class="simple_timer"></div>
+                            <div class="simple_timer syotimer timer">
+                              <div class="timer-head-block" />
+                              <div class="timer-body-block">
+                                <div class="table-cell day">
+                                  <div class="tab-val">90</div>
+                                  <div class="tab-metr tab-unit">days</div>
+                                </div>
+                                <div class="table-cell hour">
+                                  <div class="tab-val">90</div>
+                                  <div class="tab-metr tab-unit">hours</div>
+                                </div>
+                                <div class="table-cell minute">
+                                  <div class="tab-val">90</div>
+                                  <div class="tab-metr tab-unit">minutes</div>
+                                </div>
+                                <div class="table-cell second">
+                                  <div class="tab-val">90</div>
+                                  <div class="tab-metr tab-unit">seconds</div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div class="ico-progress">
                             <ul class="list-unstyled list-inline clearfix mb-10">

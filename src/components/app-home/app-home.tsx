@@ -1,28 +1,33 @@
 import { Component } from '@stencil/core';
-
-
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css'
 })
 export class AppHome {
-
+  componentDidLoad() {
+    if ('WOW' in window) {
+      const WOW = window['WOW'];
+      new WOW().init();
+    }
+  }
   render() {
-    return (
-      <div class='app-home'>
-        <p>
-          Welcome to the Stencil App Starter.
-          You can use this starter to build entire apps all with
-          web components using Stencil!
-          Check out our docs on <a href='https://stenciljs.com'>stenciljs.com</a> to get started.
-        </p>
-
-        <stencil-route-link url='/profile/stencil'>
-          <button>
-            Profile page
-          </button>
-        </stencil-route-link>
-      </div>
-    );
+    return [
+      <app-header />,
+      <app-welcome />,
+      <app-about-us />,
+      <app-video-area />,
+      <app-vertical-social />,
+      <app-trust-area />,
+      <app-services-area />,
+      <app-roadmap-area />,
+      <app-features-area />,
+      <app-subscribe-area />,
+      <app-faq-area />,
+      <app-token-distribution-area />,
+      <app-mission-area />,
+      <app-team-area />,
+      <app-blog-area />,
+      <app-footer />
+    ]
   }
 }

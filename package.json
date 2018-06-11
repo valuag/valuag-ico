@@ -1,13 +1,13 @@
 {
-  "name": "@stencil/starter",
+  "name": "valuag-ico",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "ValuAg ICO",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "build": "stencil build --prerender",
+    "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
     "start": "npm run dev",
@@ -16,27 +16,28 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "@stencil/core": "^0.9.4",
-    "@stencil/router": "latest"
+    "@stencil/core": "0.9.7",
+    "@stencil/router": "0.2.1",
+    "firebase": "5.0.4"
   },
   "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/sass": "^0.0.5",
-    "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "firebase-tools": "^3.18.6",
-    "jest": "^21.2.1"
+    "@stencil/dev-server": "0.0.18",
+    "@stencil/sass": "0.0.5",
+    "@stencil/utils": "0.0.4",
+    "@types/jest": "23.0.0",
+    "firebase-tools": "3.18.6",
+    "jest": "23.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
+    "url": "git+https://github.com/valuag/valuag-ico.git"
   },
   "author": "Ionic Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/valuag/valuag-ico"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/valuag/valuag-ico",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"

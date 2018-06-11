@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 
 @Component({
@@ -6,7 +6,12 @@ import { Component } from '@stencil/core';
   styleUrl: 'app-preloader.scss'
 })
 export class AppPreloader {
-
+  @Element() element: HTMLAppPreloaderElement;
+  componentDidLoad() {
+    setTimeout(() => {
+      this.element.remove();
+    }, 1000);
+  }
   render() {
     return (
       <div id="preloader">
