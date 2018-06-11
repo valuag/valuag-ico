@@ -20,10 +20,10 @@
     "@stencil/core": "0.9.7",
     "@stencil/router": "0.2.1",
     "@stencil/sass": "0.0.5",
-    "express": "^4.16.3",
+    "express": "4.16.3",
     "firebase": "5.0.4",
-    "firebase-admin": "^5.12.1",
-    "firebase-functions": "^1.0.4"
+    "firebase-admin": "5.12.1",
+    "firebase-functions": "1.0.4"
   },
   "devDependencies": {
     "@stencil/dev-server": "0.0.18",
