@@ -32,7 +32,7 @@ export class AppContactArea {
 
                     <div class="col-12 col-md-6">
                       <div class="group wow fadeInUp" data-wow-delay="0.2s">
-                        <input type="text" name="name" id="name" required />
+                        <input type="text" name="name" id="name" required autocomplete='name' />
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Name</label>
@@ -40,7 +40,7 @@ export class AppContactArea {
                     </div>
                     <div class="col-12 col-md-6">
                       <div class="group wow fadeInUp" data-wow-delay="0.3s">
-                        <input type="text" name="email" id="email" required />
+                        <input type="text" name="email" id="email" required autocomplete='email' />
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Email</label>
