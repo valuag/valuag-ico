@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
 import firebase from 'firebase/app';
 
 @Component({
@@ -6,16 +6,19 @@ import firebase from 'firebase/app';
   styleUrl: 'app-root.css'
 })
 export class AppRoot {
+  @Prop({ context: 'isServer' }) private isServer: boolean;
   componentWillLoad() {
-    // Initialize Firebase
-    firebase.initializeApp({
-      apiKey: "AIzaSyAKZoAyFVar3MM260goBsZ8COdbMcbgIAE",
-      authDomain: "valuag-ico.firebaseapp.com",
-      databaseURL: "https://valuag-ico.firebaseio.com",
-      projectId: "valuag-ico",
-      storageBucket: "valuag-ico.appspot.com",
-      messagingSenderId: "994045621453"
-    });
+    if (!this.isServer) {
+      // Initialize Firebase
+      firebase.initializeApp({
+        apiKey: "AIzaSyAKZoAyFVar3MM260goBsZ8COdbMcbgIAE",
+        authDomain: "valuag-ico.firebaseapp.com",
+        databaseURL: "https://valuag-ico.firebaseio.com",
+        projectId: "valuag-ico",
+        storageBucket: "valuag-ico.appspot.com",
+        messagingSenderId: "994045621453"
+      });
+    }
   }
   render() {
     return [

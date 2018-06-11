@@ -1,4 +1,8 @@
 {
+  "functions": {
+    "predeploy": "yarn build",
+    "source": "./"
+  },
   "hosting": {
     "predeploy": "yarn build",
     "public": "www",
@@ -9,7 +13,7 @@
     ],
     "rewrites": [{
       "source": "**",
-      "destination": "/index.html"
+      "function": "ssr"
     }],
     "rules": [{
         "include": "/build/app/**",

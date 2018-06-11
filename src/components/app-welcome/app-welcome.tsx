@@ -28,7 +28,7 @@ export class AppWelcome {
                       <span class="integration-text">Discover a new ways to enjoy your World!</span>
                     </div>
                   </div>
-                  <h1 class="wow fadeInUp" data-wow-delay="0.2s">Artificial Intelligence Crypto Revolution</h1>
+                  <h1 class="wow fadeInUp" data-wow-delay="0.2s">Agricultural Crypto Revolution</h1>
                   <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
                   <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
                     <a href="#" class="btn dream-btn mr-3">Learn More</a>
