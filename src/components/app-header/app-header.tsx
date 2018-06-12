@@ -1,12 +1,42 @@
 import { Component } from '@stencil/core';
+import firebase from 'firebase/app';
+import * as firebaseui from 'firebaseui';
 
 @Component({
   tag: 'app-header',
   styleUrl: 'app-header.scss'
 })
 export class AppHeader {
+  loginDialog: HTMLDialogElement;
+  isLoggedIn: boolean;
+  componentWillLoad() {
+
+  }
+  openLoginDialog() {
+    // FirebaseUI config.
+    const uiConfig = {
+      callbacks: {
+        uiShown: () => {
+          this.loginDialog.showModal();
+        }
+      },
+      signInSuccessUrl: '/',
+      signInOptions: [
+        firebase.auth.EmailAuthProvider.PROVIDER_ID
+      ],
+      // Terms of service url.
+      tosUrl: '/tos',
+      credentialHelper: firebaseui.auth.CredentialHelper.NONE,
+    };
+
+    // Initialize the FirebaseUI Widget using Firebase.
+    const ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // The start method will wait until the DOM is loaded.
+    ui.start('#firebaseui-auth-container', uiConfig);
+  }
   render() {
     return [
+      <dialog id='firebaseui-auth-container' ref={el => this.loginDialog = el as HTMLDialogElement} />,
       <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
         <div class="classy-nav-container breakpoint-off">
           <div class="container">
@@ -40,7 +70,10 @@ export class AppHeader {
                   </ul>
 
 
-                  <a href="#" class="btn login-btn ml-50">Log in</a>
+                  {this.isLoggedIn ?
+                    <a href="/my-account" class="btn login-btn ml-50">My Account</a>
+                    :
+                    <a href="#" class="btn login-btn ml-50" onClick={() => this.openLoginDialog()}>Log in</a>}
                 </div>
 
               </div>

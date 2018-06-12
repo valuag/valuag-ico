@@ -4,12 +4,6 @@ import { Component } from '@stencil/core';
   styleUrl: 'app-home.css'
 })
 export class AppHome {
-  componentDidLoad() {
-    if ('WOW' in window) {
-      const WOW = window['WOW'];
-      new WOW().init();
-    }
-  }
   render() {
     return [
       <app-header />,
