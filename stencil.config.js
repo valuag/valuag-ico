@@ -8,9 +8,6 @@ exports.config = {
       options(input) {
         input.context = 'window';
         return input;
-      },
-      transform(data) {
-        return data.replace('var l=this;', 'var l=window;');
       }
     }
   ],
@@ -23,8 +20,7 @@ exports.config = {
       'node_modules/**'
     ],
     namedExports: {
-      'node_modules/punycode/punycode.js': ['toASCII'],
-      'node_modules/firebaseui/dist/npm.js': ['auth']
+      'node_modules/punycode/punycode.js': ['toASCII']
     }
   }
 };

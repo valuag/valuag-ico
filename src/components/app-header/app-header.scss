@@ -1,13 +1,17 @@
-#firebaseui-auth-container {
-  top: 20%;
-  border: none;
-  background: transparent;
-  width: 50vw;
-  min-width: 50vw;
-  max-width: 50vw;
-  height: 50vh;
-  min-height: 50vh;
-  max-height: 50vh;
+dialog {
+  background: #4834d4;
+  position: fixed;
+  border-width: 0;
+  border-radius: 5px;
+  background-image: url(/assets/img/core-img/pattern.png);
+  margin: auto;
+  padding: 30px;
+  form {
+    margin-top: 30px;
+  }
+  &:not([open]) {
+    display: none;
+  }
 }
 
 /* ##### 2.0 Header Area CSS ##### */

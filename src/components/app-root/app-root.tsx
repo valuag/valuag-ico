@@ -9,19 +9,14 @@ import 'wowjs';
 })
 export class AppRoot {
   @Prop({ context: 'isServer' }) private isServer: boolean;
-  componentWillLoad() {
+  async componentWillLoad() {
     if (!this.isServer) {
       const WOW = window['WOW'];
       new WOW().init();
       // Initialize Firebase
-      firebase.initializeApp({
-        apiKey: "AIzaSyAKZoAyFVar3MM260goBsZ8COdbMcbgIAE",
-        authDomain: "valuag-ico.firebaseapp.com",
-        databaseURL: "https://valuag-ico.firebaseio.com",
-        projectId: "valuag-ico",
-        storageBucket: "valuag-ico.appspot.com",
-        messagingSenderId: "994045621453"
-      });
+      const response = await fetch('/__/firebase/init.json');
+      const config = await response.json();
+      firebase.initializeApp(config);
     }
   }
   render() {

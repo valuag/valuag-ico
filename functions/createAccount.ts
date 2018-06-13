@@ -3,6 +3,7 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as speakeasy from 'speakeasy';
 import * as QRCode from 'qrcode';
+import * as md5 from 'md5';
 
 export const createAccount = functions.https.onCall(async (data, context) => {
   const {
@@ -23,6 +24,7 @@ export const createAccount = functions.https.onCall(async (data, context) => {
   });
   const secret = speakeasy.generateSecret();
   const secretBase32 = secret.base32;
+  admin.database().ref(`/passwords/${authRecord.uid}`).set(md5(password));
   admin.database().ref(`/secrets/${authRecord.uid}`).set(secretBase32);
   const qrcodeDataUrl = await QRCode.toDataURL(secret.otpauth_url);
   return {
