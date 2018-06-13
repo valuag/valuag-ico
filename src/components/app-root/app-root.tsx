@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, ComponentWillLoad } from '@stencil/core';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'wowjs';
@@ -7,7 +7,7 @@ import 'wowjs';
   tag: 'app-root',
   styleUrl: 'app-root.css'
 })
-export class AppRoot {
+export class AppRoot implements ComponentWillLoad {
   @Prop({ context: 'isServer' }) private isServer: boolean;
   async componentWillLoad() {
     if (!this.isServer) {

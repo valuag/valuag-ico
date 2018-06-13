@@ -1,4 +1,4 @@
-import { Component, State, ComponentWillLoad, ComponentDidUnload } from '@stencil/core';
+import { Component, State, ComponentWillLoad, ComponentDidUnload, Prop } from '@stencil/core';
 import firebase from 'firebase/app';
 import 'firebase/functions';
 
@@ -8,25 +8,31 @@ import 'firebase/functions';
 })
 export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
 
+  @Prop({ context: 'isServer' }) private isServer: boolean;
+
   loginDialog: HTMLDialogElement;
   loginForm: HTMLFormElement;
-  @State() loginError: Error;
+  @State() loginError: string;
 
   onAuthStateChangedUnsubscribe: firebase.Unsubscribe;
   @State() isLoggedIn: boolean;
 
   registerDialog: HTMLDialogElement;
   registerForm: HTMLFormElement;
-  @State() registerError: Error;
+  @State() registerError: string;
   @State() qrcodeDataUrl: string;
 
   componentWillLoad() {
-    this.onAuthStateChangedUnsubscribe = firebase.auth().onAuthStateChanged(user => {
-      this.isLoggedIn = !!user
-    });
+    if (!this.isServer) {
+      this.onAuthStateChangedUnsubscribe = firebase.auth().onAuthStateChanged(user => {
+        this.isLoggedIn = !!user
+      });
+    }
   }
   componentDidUnload() {
-    this.onAuthStateChangedUnsubscribe();
+    if (this.onAuthStateChangedUnsubscribe) {
+      this.onAuthStateChangedUnsubscribe();
+    }
   }
   private async handleLogin(e: Event) {
     e.preventDefault();
@@ -44,7 +50,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       await firebase.auth().signInWithCustomToken(loginToken);
       this.loginDialog.close();
     } catch (e) {
-      this.loginError = e;
+      this.loginError = JSON.parse(e.message).message;
     }
   }
   private async handleRegister(e: Event) {
@@ -59,14 +65,13 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
         displayName,
         email,
         phoneNumber,
-        photoURL: 'https://',
         password
       });
 
       this.qrcodeDataUrl = qrcodeDataUrl;
 
     } catch (e) {
-      this.registerError = e;
+      this.registerError = JSON.parse(e.message).message;
     }
   }
   render() {
@@ -75,7 +80,10 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
         <h3>Login</h3>
         {this.loginError && (
           <div class="alert alert-danger" role="alert">
-            {this.loginError.message}
+            Error: {this.loginError}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" onClick={() => this.loginError = ''}>
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         )}
         <form onSubmit={e => this.handleLogin(e)} ref={el => this.loginForm = el as HTMLFormElement}>
@@ -91,6 +99,12 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
             <span class="highlight" />
             <label htmlFor="password">Password</label>
           </div>
+          <div class="group">
+            <input type="token" name="token" required />
+            <span class="bar" />
+            <span class="highlight" />
+            <label htmlFor="token">Token</label>
+          </div>
           <div class="dream-btn-group">
             <button type="submit" class="btn dream-btn mr-3">Login</button>
             <button type="reset" class="btn dream-btn" onClick={() => this.loginDialog.close()}>Close</button>
@@ -102,7 +116,10 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
         <small class="form-text text-light">We'll never share your personal information with anyone else.</small>
         {this.registerError && (
           <div class="alert alert-danger" role="alert">
-            {this.registerError.message}
+            Error: {this.registerError}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" onClick={() => this.registerError = ''}>
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         )}
         {this.qrcodeDataUrl && [
@@ -112,7 +129,9 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
             Please keep this QRCode safe!
           </div>,
           <img src={this.qrcodeDataUrl} />,
-          <button class="btn dream-btn" onClick={() => this.registerDialog.close()}>Close</button>
+          <div class='dream-btn-group'>
+            <button class="btn dream-btn" onClick={() => this.registerDialog.close()}>Close</button>
+          </div>
         ]}
         <form onSubmit={e => this.handleRegister(e)} ref={el => this.registerForm = el as HTMLFormElement} hidden={!!this.qrcodeDataUrl}>
           <div class="group">
