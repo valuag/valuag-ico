@@ -12,6 +12,63 @@ dialog {
   &:not([open]) {
     display: none;
   }
+  &[open] {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    animation: show-dialog 1s ease normal;
+    &::backdrop {
+      animation: show-backdrop 0.5s ease 0.2s normal;
+    }
+  }
+  &.hide {
+    animation: hide-dialog 1s ease normal;
+    &::backdrop {
+      animation: hide-backdrop 0.5s ease 0.2s normal;
+    }
+  }
+  &::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    animation: none;
+  }
+}
+
+@keyframes show-dialog {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hide-dialog {
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes show-backdrop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide-backdrop {
+  to {
+    opacity: 0;
+  }
 }
 
 /* ##### 2.0 Header Area CSS ##### */

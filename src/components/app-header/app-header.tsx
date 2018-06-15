@@ -12,6 +12,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
 
   loginDialog: HTMLDialogElement;
   loginForm: HTMLFormElement;
+  @State() loginStatus: string;
   @State() loginError: string;
 
   onAuthStateChangedUnsubscribe: firebase.Unsubscribe;
@@ -19,6 +20,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
 
   registerDialog: HTMLDialogElement;
   registerForm: HTMLFormElement;
+  @State() registerStatus: string;
   @State() registerError: string;
   @State() qrcodeDataUrl: string;
 
@@ -29,6 +31,15 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       });
     }
   }
+  closeDialog(dialog: HTMLDialogElement){
+    dialog.classList.add('hide');
+    const eventListener = function(){
+        dialog.classList.remove('hide');
+        dialog.close();
+        dialog.removeEventListener('webkitAnimationEnd', eventListener, false);
+    };
+    dialog.addEventListener('webkitAnimationEnd', eventListener, false);
+  }
   componentDidUnload() {
     if (this.onAuthStateChangedUnsubscribe) {
       this.onAuthStateChangedUnsubscribe();
@@ -36,6 +47,8 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
   }
   private async handleLogin(e: Event) {
     e.preventDefault();
+    this.loginStatus = 'Logging in...';
+    this.loginError = '';
     try {
       const { value: email } = this.loginForm.elements.namedItem('email') as HTMLInputElement;
       const { value: password } = this.loginForm.elements.namedItem('password') as HTMLInputElement;
@@ -48,13 +61,17 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       });
 
       await firebase.auth().signInWithCustomToken(loginToken);
-      this.loginDialog.close();
+      this.loginStatus = '';
+      this.loginForm.reset();
+      this.closeDialog(this.loginDialog);
     } catch (e) {
       this.loginError = JSON.parse(e.message).message;
     }
   }
   private async handleRegister(e: Event) {
     e.preventDefault();
+    this.registerStatus = 'Creating your account...';
+    this.registerError = '';
     try {
       const { value: displayName } = this.registerForm.elements.namedItem('displayName') as HTMLInputElement;
       const { value: phoneNumber } = this.registerForm.elements.namedItem('phoneNumber') as HTMLInputElement;
@@ -67,9 +84,10 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
         phoneNumber,
         password
       });
-
+      
       this.qrcodeDataUrl = qrcodeDataUrl;
-
+      this.registerStatus = '';
+      this.registerForm.reset();
     } catch (e) {
       this.registerError = JSON.parse(e.message).message;
     }
@@ -84,6 +102,11 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
             <button type="button" class="close" data-dismiss="alert" aria-label="Close" onClick={() => this.loginError = ''}>
               <span aria-hidden="true">&times;</span>
             </button>
+          </div>
+        )}
+        {this.loginStatus && (
+          <div class="alert alert-info" role="alert">
+            {this.loginStatus}
           </div>
         )}
         <form onSubmit={e => this.handleLogin(e)} ref={el => this.loginForm = el as HTMLFormElement}>
@@ -107,7 +130,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
           </div>
           <div class="dream-btn-group">
             <button type="submit" class="btn dream-btn mr-3">Login</button>
-            <button type="reset" class="btn dream-btn" onClick={() => this.loginDialog.close()}>Close</button>
+            <button type="reset" class="btn dream-btn" onClick={() => this.closeDialog(this.loginDialog)}>Close</button>
           </div>
         </form>
       </dialog>,
@@ -122,6 +145,11 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
             </button>
           </div>
         )}
+        {this.registerStatus && (
+          <div class="alert alert-info" role="alert">
+            {this.registerStatus}
+          </div>
+        )}
         {this.qrcodeDataUrl && [
           <div class="alert alert-success" role="alert">
             Your registration is successful!
@@ -130,7 +158,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
           </div>,
           <img src={this.qrcodeDataUrl} />,
           <div class='dream-btn-group'>
-            <button class="btn dream-btn" onClick={() => this.registerDialog.close()}>Close</button>
+            <button class="btn dream-btn" onClick={() => this.closeDialog(this.registerDialog)}>Close</button>
           </div>
         ]}
         <form onSubmit={e => this.handleRegister(e)} ref={el => this.registerForm = el as HTMLFormElement} hidden={!!this.qrcodeDataUrl}>
