@@ -93,12 +93,12 @@ dialog {
 }
 
 .dark.classy-nav-container {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .classy-navbar {
-  height: 90px;
-  padding: 0;
+  height: 90px !important;
+  padding: 0 !important;
 }
 
 .classynav ul li a {

@@ -1,4 +1,4 @@
-import { Component, State, ComponentWillLoad, ComponentDidUnload, Prop } from '@stencil/core';
+import { Component, State, Listen, ComponentWillLoad, ComponentDidUnload, Prop } from '@stencil/core';
 import firebase from 'firebase/app';
 import 'firebase/functions';
 
@@ -23,6 +23,8 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
   @State() registerStatus: string;
   @State() registerError: string;
   @State() qrcodeDataUrl: string;
+
+  headerArea: HTMLElement;
 
   componentWillLoad() {
     if (!this.isServer) {
@@ -90,6 +92,14 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       this.registerForm.reset();
     } catch (e) {
       this.registerError = JSON.parse(e.message).message;
+    }
+  }
+  @Listen('window:scroll')
+  onScroll(){
+    if (scrollY > 0) {
+      this.headerArea.classList.add('sticky');
+    } else {
+      this.headerArea.classList.remove('sticky');
     }
   }
   render() {
@@ -192,8 +202,8 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
           </div>
         </form>
       </dialog>,
-      <header class="header-area wow fadeInDown" data-wow-delay="0.2s">
-        <div class="classy-nav-container breakpoint-off">
+      <header class="header-area wow fadeInDown" data-wow-delay="0.2s" ref={el => this.headerArea = el}>
+        <div class="classy-nav-container breakpoint-off dark left">
           <div class="container">
 
             <nav class="classy-navbar justify-content-between" id="dreamNav">
