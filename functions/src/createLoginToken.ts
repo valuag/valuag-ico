@@ -5,7 +5,7 @@ import * as md5 from 'md5';
 
 function verifyToken(secret, token) {
   return speakeasy.totp.verify({
-    secret,
+    secret: secret,
     token,
     encoding: 'base32'
   });
@@ -15,21 +15,19 @@ function verifyPassword(password, passwordMd5) {
   return md5(password) === passwordMd5;
 }
 
-
 export const createLoginToken = functions.https.onCall(async (data) => {
   const { token, email, password } = data;
-  const { uid } = await admin.auth().getUserByEmail(email);
-  const passwordMd5Snapshot = await admin.database().ref(`/passwords/${uid}`).once("value");
-  const passwordMd5 = passwordMd5Snapshot.val();
-  console.log({
-    uid,
+  const userRecord = await admin.auth().getUserByEmail(email);
+  const usersCollection = admin.firestore().collection('users');
+  const userDoc = await usersCollection.doc(userRecord.uid);
+  const userDataSnapshot = await userDoc.get();
+  const {
+    secret,
     passwordMd5
-  });
+  } = userDataSnapshot.data();
   if (verifyPassword(password, passwordMd5)) {
-    const secretSnapshot = await admin.database().ref(`/secrets/${uid}`).once("value");
-    const secret = secretSnapshot.val();
     if (verifyToken(secret, token)) {
-      const loginToken = await admin.auth().createCustomToken(uid);
+      const loginToken = await admin.auth().createCustomToken(userRecord.uid);
       return {
         loginToken
       };

@@ -12,9 +12,9 @@ export const createAccount = functions.https.onCall(async (data) => {
     password,
     displayName
   } = data;
-  let authRecord;
+  let userRecord: admin.auth.UserRecord;
   try {
-    authRecord = await admin.auth().createUser({
+    userRecord = await admin.auth().createUser({
       email,
       emailVerified: false,
       phoneNumber,
@@ -28,36 +28,22 @@ export const createAccount = functions.https.onCall(async (data) => {
       exception
     }));
   }
-  let secret;
+  const passwordMd5 = md5(password);
+  const secret = speakeasy.generateSecret({
+    name: 'ValuAg ICO'
+  });
+  const usersCollection = admin.firestore().collection('users');
+  usersCollection.get().then(a => console.log(a.docs))
+  const userDoc = await usersCollection.doc(userRecord.uid);
   try {
-    secret = speakeasy.generateSecret({
-      name: 'ValuAg ICO'
+    await userDoc.set({
+      passwordMd5: md5(password),
+      secret: secret.base32
     });
   } catch (exception) {
-    admin.auth().deleteUser(authRecord.uid);
+    await admin.auth().deleteUser(userRecord.uid);
     throw new functions.https.HttpsError('aborted', JSON.stringify({
-      message: `Two factor auth secret couldn't generated!`,
-      exception
-    }));
-  }
-  try {
-    admin.database().ref(`/passwords/${authRecord.uid}`).set(md5(password));
-  } catch (exception) {
-    admin.auth().deleteUser(authRecord.uid);
-    throw new functions.https.HttpsError('aborted', JSON.stringify({
-      message: `User password couldn't put on database`,
-      exception
-    }));
-  }
-  const secretBase32 = secret.base32;
-  try {
-    admin.database().ref(`/secrets/${authRecord.uid}`).set(secretBase32);
-  } catch (exception) {
-    admin.auth().deleteUser(authRecord.uid);
-    await admin.database().ref(`/passwords/${authRecord.uid}`).remove();
-
-    throw new functions.https.HttpsError('aborted', JSON.stringify({
-      message: `Two factor auth secret couldn't put on database`,
+      message: `User private data couldn't put on database`,
       exception
     }));
   }
@@ -67,9 +53,8 @@ export const createAccount = functions.https.onCall(async (data) => {
       qrcodeDataUrl
     };
   } catch (exception) {
-    admin.auth().deleteUser(authRecord.uid);
-    await admin.database().ref(`/passwords/${authRecord.uid}`).remove();
-    await admin.database().ref(`/secrets/${authRecord.uid}`).remove();
+    await admin.auth().deleteUser(userRecord.uid);
+    await userDoc.delete();
 
     throw new functions.https.HttpsError('aborted', JSON.stringify({
       message: `QRCode couldn't generated!`,
