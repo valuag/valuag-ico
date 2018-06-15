@@ -1,4 +1,5 @@
 const sass = require('@stencil/sass');
+const path = require('path');
 
 exports.config = {
   globalStyle: 'src/global/app.scss',
@@ -11,6 +12,10 @@ exports.config = {
       }
     }
   ],
+  copy: [{
+    src: path.resolve('./node_modules/font-awesome/fonts'),
+    dest: 'build/node_modules/font-awesome/fonts'
+  }],
   nodeResolve: {
     preferBuiltins: true,
     browser: true
