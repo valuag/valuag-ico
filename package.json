@@ -30,7 +30,7 @@
     "firebase": "5.0.4",
     "font-awesome": "4.7.0",
     "owl.carousel": "2.3.4",
-    "web3": "0.20.5",
+    "web3": "0.20.6",
     "wowjs": "1.1.3"
   },
   "devDependencies": {
