@@ -24,7 +24,7 @@ export class AppFeaturesArea {
               <div class="services-block-four">
                 <div class="inner-box">
                   <div class="icon-box">
-                    <span class="icon ti-mobile"></span>
+                    <span class="icon ti ti-mobile"></span>
                   </div>
                   <h3><a href="#">Powerfull Mobile and Online App</a></h3>
                   <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non hic eum dolores natus, vitae, quae, facere perferendis quas tempore. Consequuntur commodi facilis sed similique.</div>
@@ -35,7 +35,7 @@ export class AppFeaturesArea {
               <div class="services-block-four">
                 <div class="inner-box">
                   <div class="icon-box">
-                    <span class="icon ti-widget"></span>
+                    <span class="icon ti ti-widget"></span>
                   </div>
                   <h3><a href="#">Brings more Transparency and Speed</a></h3>
                   <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut repudiandae harum, fugit, necessitatibus veritatis molestias a eligendi distinctio. Nostrum expedita deserunt maiores adipisci.</div>
@@ -45,7 +45,7 @@ export class AppFeaturesArea {
               <div class="services-block-four" style={{ marginBottom: '0' }}>
                 <div class="inner-box">
                   <div class="icon-box">
-                    <span class="icon ti-settings"></span>
+                    <span class="icon ti ti-settings"></span>
                   </div>
                   <h3><a href="#">Special for Multiple Use Capabilities</a></h3>
                   <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia maiores, ducimus animi a. Nulla ab dolor doloribus, aperiam, quam dolorum dicta vitae tempora, vero at quod error alias incidunt quidem.</div>
