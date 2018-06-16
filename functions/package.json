@@ -1,0 +1,29 @@
+{
+  "name": "valuag-ico-functions",
+  "version": "1.0.0",
+  "description": "ValuAg ICO Functions",
+  "main": "dist/index.js",
+  "repository": "https://github.com/valuag/valuag-ico.git",
+  "author": "ValuAg ICO",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn watch && yarn serve",
+    "watch": "tsc -w",
+    "serve": "firebase serve --only functions",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "firebase-admin": "5.12.1",
+    "firebase-functions": "1.0.4",
+    "md5": "^2.2.1",
+    "qrcode": "^1.2.0",
+    "speakeasy": "^2.0.0",
+    "tslib": "^1.9.2"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.1.32",
+    "@types/qrcode": "^1.2.0",
+    "@types/speakeasy": "^2.0.2"
+  }
+}

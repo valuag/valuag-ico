@@ -1,7 +1,6 @@
 {
   "functions": {
-    "predeploy": "yarn build",
-    "source": "./"
+    "predeploy": "yarn build:functions"
   },
   "hosting": {
     "predeploy": "yarn build",
@@ -13,22 +12,14 @@
     ],
     "rewrites": [{
       "source": "**",
-      "function": "ssr"
+      "destination": "/index.html"
     }],
-    "rules": [{
-        "include": "/build/app/**",
-        "headers": [{
-          "name": "Cache-Control",
-          "value": "public, max-age=31536000"
-        }]
-      },
-      {
-        "include": "/sw.js",
-        "headers": [{
-          "name": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
-        }]
-      }
-    ]
+    "headers": [{
+      "source": "**",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "no-cache, no-store, must-revalidate"
+      }]
+    }]
   }
 }

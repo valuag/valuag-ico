@@ -1,15 +1,15 @@
 /* ##### Import All CSS ##### */
 
-@import './imports/bootstrap.min.css';
-@import './imports/animate.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/animate.css/animate.min.css';
 @import './imports/about-sonar.css';
 @import './imports/classy-nav.min.css';
 @import './imports/dzsparallaxer.css';
-@import './imports/owl.carousel.min.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
 @import './imports/magnific-popup.css';
 @import './imports/animated-headline.css';
-@import './imports/font-awesome.min.css';
-@import './imports/themify-icons.css';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+@import '../../node_modules/@icon/themify-icons/themify-icons.css';
 @import './imports/animated-headline.scss';
 @import './imports/button-ripple.scss';
 @import './imports/counter-down.scss';
