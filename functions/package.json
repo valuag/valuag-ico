@@ -16,14 +16,14 @@
   "dependencies": {
     "firebase-admin": "5.12.1",
     "firebase-functions": "1.0.4",
-    "md5": "^2.2.1",
-    "qrcode": "^1.2.0",
-    "speakeasy": "^2.0.0",
-    "tslib": "^1.9.2"
+    "md5": "2.2.1",
+    "qrcode": "1.2.0",
+    "speakeasy": "2.0.0",
+    "tslib": "1.9.2"
   },
   "devDependencies": {
-    "@types/md5": "^2.1.32",
-    "@types/qrcode": "^1.2.0",
-    "@types/speakeasy": "^2.0.2"
+    "@types/md5": "2.1.32",
+    "@types/qrcode": "1.2.0",
+    "@types/speakeasy": "2.0.2"
   }
 }
