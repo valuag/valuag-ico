@@ -200,7 +200,7 @@
     string-format-obj "^1.0.0"
     through2 "^2.0.0"
 
-"@icon/themify-icons@^1.0.1-2":
+"@icon/themify-icons@1.0.1-2":
   version "1.0.1-2"
   resolved "https://registry.yarnpkg.com/@icon/themify-icons/-/themify-icons-1.0.1-2.tgz#27c85df7d20e07d408c72a695ea1858ac634eedc"
 
@@ -354,7 +354,7 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-animate.css@^3.6.1, animate.css@latest:
+animate.css@latest:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.6.1.tgz#4ea8a48556378bc8d7535224296c4c0dac9229de"
 
@@ -902,7 +902,7 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap@^4.1.1:
+bootstrap@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
@@ -975,7 +975,7 @@ browser-sync-ui@v1.0.1:
     socket.io-client "2.0.4"
     stream-throttle "^0.1.3"
 
-browser-sync@^2.24.4:
+browser-sync@2.24.4:
   version "2.24.4"
   resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.24.4.tgz#e6e1544c8a6c088dc76f49f7059bc3df967e0ae0"
   dependencies:
@@ -2546,7 +2546,7 @@ follow-redirects@^1.2.5, follow-redirects@^1.3.0:
   dependencies:
     debug "^3.1.0"
 
-font-awesome@^4.7.0:
+font-awesome@4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
@@ -5260,7 +5260,7 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-owl.carousel@^2.3.4:
+owl.carousel@2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
   dependencies:
@@ -7457,7 +7457,7 @@ workbox-sw@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-3.2.0.tgz#ccda9adff557ba2233bf1837229144b4a86276cb"
 
-wowjs@^1.1.3:
+wowjs@1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/wowjs/-/wowjs-1.1.3.tgz#440fc1bb4c7e896840ee47972296a2b59075acbd"
   dependencies:

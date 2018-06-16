@@ -26,7 +26,6 @@
     "@stencil/core": "0.9.7",
     "@stencil/router": "0.2.1",
     "@stencil/sass": "0.0.5",
-    "animate.css": "3.6.1",
     "bootstrap": "4.1.1",
     "firebase": "5.0.4",
     "font-awesome": "4.7.0",

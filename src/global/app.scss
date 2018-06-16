@@ -1,7 +1,8 @@
 /* ##### Import All CSS ##### */
 
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../node_modules/animate.css/animate.min.css';
+//@import '../../node_modules/animate.css/animate.min.css';
+@import './imports/animate.scss';
 @import './imports/about-sonar.css';
 @import './imports/classy-nav.min.css';
 @import './imports/dzsparallaxer.css';

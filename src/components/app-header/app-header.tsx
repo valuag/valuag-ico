@@ -33,12 +33,12 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       });
     }
   }
-  closeDialog(dialog: HTMLDialogElement){
+  closeDialog(dialog: HTMLDialogElement) {
     dialog.classList.add('hide');
-    const eventListener = function(){
-        dialog.classList.remove('hide');
-        dialog.close();
-        dialog.removeEventListener('webkitAnimationEnd', eventListener, false);
+    const eventListener = function () {
+      dialog.classList.remove('hide');
+      dialog.close();
+      dialog.removeEventListener('webkitAnimationEnd', eventListener, false);
     };
     dialog.addEventListener('webkitAnimationEnd', eventListener, false);
   }
@@ -67,6 +67,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
       this.loginForm.reset();
       this.closeDialog(this.loginDialog);
     } catch (e) {
+      this.loginStatus = '';
       this.loginError = JSON.parse(e.message).message;
     }
   }
@@ -86,16 +87,17 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
         phoneNumber,
         password
       });
-      
+
       this.qrcodeDataUrl = qrcodeDataUrl;
       this.registerStatus = '';
       this.registerForm.reset();
     } catch (e) {
+      this.registerStatus = '';
       this.registerError = JSON.parse(e.message).message;
     }
   }
   @Listen('window:scroll')
-  onScroll(){
+  onScroll() {
     if (scrollY > 0) {
       this.headerArea.classList.add('sticky');
     } else {
