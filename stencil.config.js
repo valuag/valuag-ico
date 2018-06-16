@@ -13,9 +13,18 @@ exports.config = {
     }
   ],
   copy: [{
-    src: path.resolve('./node_modules/font-awesome/fonts'),
-    dest: 'build/node_modules/font-awesome/fonts'
-  }],
+      src: path.resolve('./node_modules/font-awesome/fonts'),
+      dest: 'build/node_modules/font-awesome/fonts'
+    },
+    {
+      src: path.resolve('./node_modules/@icon/themify-icons/themify-icons.woff'),
+      dest: 'build/node_modules/@icon/themify-icons/themify-icons.woff'
+    },
+    {
+      src: path.resolve('./node_modules/@icon/themify-icons/themify-icons.ttf'),
+      dest: 'build/node_modules/@icon/themify-icons/themify-icons.ttf'
+    }
+  ],
   nodeResolve: {
     preferBuiltins: true,
     browser: true
