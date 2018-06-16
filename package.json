@@ -30,9 +30,9 @@
     "bootstrap": "4.1.1",
     "firebase": "5.0.4",
     "font-awesome": "4.7.0",
-    "owl.carousel": "^2.3.4",
+    "owl.carousel": "2.3.4",
     "web3": "0.20.5",
-    "wowjs": "^1.1.3"
+    "wowjs": "1.1.3"
   },
   "devDependencies": {
     "@stencil/dev-server": "0.0.18",
