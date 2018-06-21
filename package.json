@@ -27,7 +27,7 @@
     "@stencil/router": "0.2.1",
     "@stencil/sass": "0.0.5",
     "bootstrap": "4.1.1",
-    "firebase": "5.0.4",
+    "firebase": "5.1.0",
     "font-awesome": "4.7.0",
     "owl.carousel": "2.3.4",
     "web3": "0.20.5",
