@@ -200,9 +200,9 @@
     string-format-obj "^1.0.0"
     through2 "^2.0.0"
 
-"@icon/themify-icons@1.0.1-2":
-  version "1.0.1-2"
-  resolved "https://registry.yarnpkg.com/@icon/themify-icons/-/themify-icons-1.0.1-2.tgz#27c85df7d20e07d408c72a695ea1858ac634eedc"
+"@icon/themify-icons@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@icon/themify-icons/-/themify-icons-1.0.6.tgz#74f4fbbf4d07c2f711ce8cdf9ce41cac392d4bbc"
 
 "@ionic/discover@^0.3.3":
   version "0.3.3"
