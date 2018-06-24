@@ -37,7 +37,7 @@
     "@stencil/dev-server": "0.0.18",
     "@stencil/utils": "0.0.4",
     "@types/jest": "23.1.1",
-    "browser-sync": "2.24.4",
+    "browser-sync": "2.24.5",
     "firebase-tools": "3.19.0",
     "jest": "23.1.0"
   },
