@@ -240,11 +240,11 @@
     opn "^5.1.0"
     tiny-lr "^1.0.5"
 
-"@stencil/router@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.1.tgz#f4eb5d04f11549906c88039902b5d61f0baf91f7"
+"@stencil/router@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.2.tgz#d56673562f94e7e67f4a6e7216cc748596e1ebf9"
   dependencies:
-    "@stencil/state-tunnel" "0.0.6"
+    "@stencil/state-tunnel" "0.0.7"
 
 "@stencil/sass@0.0.5":
   version "0.0.5"
@@ -252,9 +252,9 @@
   dependencies:
     node-sass "4.9.0"
 
-"@stencil/state-tunnel@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.6.tgz#399df6f065552a438101823adead8fbd06a0a0fc"
+"@stencil/state-tunnel@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.7.tgz#e65152a6c68a1ba34479b1befe9515ed4ce0ba77"
 
 "@stencil/utils@0.0.4":
   version "0.0.4"
