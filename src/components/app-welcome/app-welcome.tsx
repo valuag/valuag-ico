@@ -31,8 +31,8 @@ export class AppWelcome {
                   <h1 class="wow fadeInUp" data-wow-delay="0.2s">Agricultural Crypto Revolution</h1>
                   <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
                   <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
-                    <a href="#" class="btn dream-btn mr-3">Learn More</a>
-                    <a href="#" class="btn dream-btn">Contact Us</a>
+                    <a href="#" class="btn dream-btn mr-3">Whitepaper</a>
+                    <a href="https://github.com/valuag" target="blank" class="btn dream-btn">GitHub</a>
                   </div>
                 </div>
               </div>

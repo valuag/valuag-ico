@@ -25,7 +25,9 @@
 }
 
 .blog_thumbnail img {
-  width: 100%;
+  width: 350px;
+  height: 215px;
+  object-fit: cover;
 }
 
 .single-blog-area blockquote {

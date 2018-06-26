@@ -13,6 +13,9 @@
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 20px;
+  img {
+    min-width: 100%;
+  }
 }
 
 .team-info h5 {

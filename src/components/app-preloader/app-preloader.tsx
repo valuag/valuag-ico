@@ -1,4 +1,4 @@
-import { Component, Element } from '@stencil/core';
+import { Component, Element, Prop } from '@stencil/core';
 
 
 @Component({
@@ -7,10 +7,13 @@ import { Component, Element } from '@stencil/core';
 })
 export class AppPreloader {
   @Element() element: HTMLAppPreloaderElement;
+  @Prop({ context: 'isServer' }) isServer: boolean;
   componentDidLoad() {
-    setTimeout(() => {
-      this.element.remove();
-    }, 1000);
+    if (!this.isServer) {
+      setTimeout(() => {
+        this.element.remove();
+      }, 1000);
+    }
   }
   render() {
     return (

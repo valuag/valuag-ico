@@ -13,7 +13,7 @@ export class AppSubscribeArea {
             <div class="col-sm-12">
               <div class="subscribe-wrapper">
                 <div class="section-heading text-center">
-                  <h2 class="wow fadeInUp" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInUp' }}>Donâ€™t Miss ICO News And Updates!</h2>
+                  <h2 class="wow fadeInUp" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeInUp' }}>Don't Miss ICO News And Updates!</h2>
                   <p class="wow fadeInUp" data-wow-delay="0.4s" style={{ visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeInUp' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                 </div>
                 <div class="service-text">
@@ -24,20 +24,20 @@ export class AppSubscribeArea {
                       <span class="highlight"></span>
                       <span class="bar"></span>
                       <label>enter your email</label>
-                      <button class="dream-btn"><i class="fa fa-paper-plane-o"></i></button>
+                      <button class="dream-btn"><i class="fa fa-paper-plane-o" /></button>
                     </div>
                   </div>
                   <div class="col-lg-5 col-lg-offset-1 col-sm-12 text-center">
                     <span class="telegram-text">Join our chat: </span>
-                    <a href="" class="button"><i class="fa fa-telegram"></i>Telegram</a>
+                    <a href="" class="button"><i class="fa fa-telegram" />Telegram</a>
                   </div>
                   <div class="col-lg-5 col-sm-12 text-center">
                     <ul class="list-unstyled list-inline social-list">
-                      <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-                      <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-                      <li><a href=""><i class="fa fa-github-square"></i></a></li>
-                      <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                      <li><a href=""><i class="fa fa-medium"></i></a></li>
+                      <li><a href=""><i class="fa fa-facebook-square" /></a></li>
+                      <li><a href=""><i class="fa fa-twitter-square" /></a></li>
+                      <li><a href=""><i class="fa fa-github-square" /></a></li>
+                      <li><a href=""><i class="fa fa-instagram" /></a></li>
+                      <li><a href=""><i class="fa fa-medium" /></a></li>
                     </ul>
                   </div>
 
