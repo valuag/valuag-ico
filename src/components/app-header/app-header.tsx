@@ -210,7 +210,7 @@ export class AppHeader implements ComponentWillLoad, ComponentDidUnload {
 
             <nav class="classy-navbar justify-content-between" id="dreamNav">
 
-              <a class="nav-brand" href="index-2.html"><img src="/assets/img/core-img/logo.png" alt="logo" /> ValuAg ICO.</a>
+              <a class="nav-brand" href="#top"><img src="/assets/img/core-img/logo.png" alt="logo" /> ValuAg ICO.</a>
 
 
               <div class="classy-navbar-toggler">
