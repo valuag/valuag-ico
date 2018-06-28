@@ -25,11 +25,11 @@ export class AppWelcome {
                       <span class="integration-icon">
                         <img src="/assets/img/svg/img-dollar.svg" width="24" height="24" alt="" />
                       </span>
-                      <span class="integration-text">Discover a new ways to enjoy your World!</span>
+                      <span class="integration-text">Discover new ways to enjoy your World!</span>
                     </div>
                   </div>
                   <h1 class="wow fadeInUp" data-wow-delay="0.2s">Agricultural Crypto Revolution</h1>
-                  <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.</p>
+                  <p class="wow fadeInUp" data-wow-delay="0.3s">We have over 15 year experience in business marketplace arena.</p>
                   <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
                     <a href="#" class="btn dream-btn mr-3">Whitepaper</a>
                     <a href="https://github.com/valuag" target="blank" class="btn dream-btn">GitHub</a>

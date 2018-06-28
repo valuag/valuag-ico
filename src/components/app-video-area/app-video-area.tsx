@@ -13,8 +13,8 @@ export class AppVideoArea {
             <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
               <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
             </div>
-            <h2 class="wow fadeInUp" data-wow-delay="0.3s">Watch our demo video</h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s">Watch our video</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">Everything we do, we believe it is health that is real wealth.</p>
           </div>
           <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
             <div class="welcome-video-area wow fadeInUp" data-wow-delay="0.5s">

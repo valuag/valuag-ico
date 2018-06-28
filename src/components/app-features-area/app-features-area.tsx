@@ -14,8 +14,8 @@ export class AppFeaturesArea {
           <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
             <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
-          <h2 class="wow fadeInUp" data-wow-delay="0.3s">Our Wallet Application</h2>
-          <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+          <h2 class="wow fadeInUp" data-wow-delay="0.3s">Meet your new grocery store</h2>
+          <p class="wow fadeInUp" data-wow-delay="0.4s">Discover nearby farms. Check their farm page and learn about their products. You can order online your next meal directly from nearby farms to you. Get deliveries or pick-up from the nearby farmers market.</p>
         </div>
 
         <div class="container-fluid">

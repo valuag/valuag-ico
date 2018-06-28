@@ -25,9 +25,11 @@ export class AppAboutUs {
                 <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
                   <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
-                <h4 class="wow fadeInUp" data-wow-delay="0.3s">We complete every project with extra care as customer need.</h4>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                <p class="wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!</p>
+                <h4 class="wow fadeInUp" data-wow-delay="0.3s">What does ValuAg offer?</h4>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">ValuAg's online network connects ag/farm/food producers with buyers of anytime/anywhere transactions for seasonal products.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">ValuAg creates marketplace for you to access fresh, organic and healthy food around your local area.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.6s">ValuAg only works with organic and GMO-free farms who can take their responsibility to the consumer seriously.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.7s">ValuAg products work great for any scale of food consumers - individuals, restourants, grocery stores, schools...</p>
                 <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#">Read More</a>
               </div>
             </div>
@@ -45,9 +47,9 @@ export class AppAboutUs {
                 <div class="dream-dots wow fadeInUp" data-wow-delay="0.2s">
                   <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
-                <h4 class="wow fadeInUp" data-wow-delay="0.3s">We complete every project with extra care as customer need.</h4>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
-                <p class="wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo laboriosam, dolorum ducimus similique aliquam consequuntur saepe numquam suscipit praesentium fuga eveniet error assumenda eos quasi doloribus ullam autem, quisquam aliquam consequuntur saepe numquam suscipit similique!</p>
+                <h4 class="wow fadeInUp" data-wow-delay="0.3s">Target Market</h4>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">Initially, our services will be targeted toward AFF industry producers and those that buy from them. Providing our geo-ERP, supply chain management, and food-hub concept, we'll evolve to include everyday consumers.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.5s">Today, NY alone realizes over $131 billion & over 200,000 jobs of the $1 trillion US AFF extended industry revenue(2011:NY Farm Viability/Cornell U. report). Our goal is to capture another 1% of the AFF related industry revenue in 5 years resulting in $1.3 billion in new economic activity & thousands of AFF+ high-tech/salaried jobs & carreers.</p>
                 <a class="btn dream-btn mt-30 wow fadeInUp" data-wow-delay="0.6s" href="#">Read More</a>
               </div>
             </div>
