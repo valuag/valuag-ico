@@ -1,20 +1,60 @@
 {
-  "functions": {
-    "predeploy": "yarn build:functions"
-  },
-  "hosting": {
-    "predeploy": "yarn build",
-    "public": "www",
-    "rewrites": [{
-      "source": "**",
-      "destination": "/index.html"
-    }],
-    "headers": [{
-      "source": "**",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "no-cache, no-store, must-revalidate"
-      }]
-    }]
-  }
+	"hosting": {
+		"public": "www",
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		],
+		"headers": [
+			{
+				"source": "/",
+				"headers": [
+					{
+						"key": "Link",
+						"value": "</build/app/app.67lcqu4c.js>;rel=preload;as=script"
+					},
+					{
+						"key": "Link",
+						"value": "</build/app/qkrpnyho.js>;rel=preload;as=script"
+					},
+					{
+						"key": "Link",
+						"value": "</build/app/rt1vkrcv.js>;rel=preload;as=script"
+					},
+					{
+						"key": "Link",
+						"value": "</build/app/t8iuhg2k.js>;rel=preload;as=script"
+					},
+					{
+						"key": "Link",
+						"value": "</assets/img/core-img/logo.png>;rel=preload;as=image"
+					},
+					{
+						"key": "Link",
+						"value": "</assets/img/svg/img-dollar.svg>;rel=preload;as=image"
+					}
+				]
+			},
+			{
+				"source": "/build/app/**",
+				"headers": [
+					{
+						"key": "Cache-Control",
+						"value": "public, max-age=31536000"
+					}
+				]
+			},
+			{
+				"source": "/sw.js",
+				"headers": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache, no-store, must-revalidate"
+					}
+				]
+			}
+		]
+	}
 }

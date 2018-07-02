@@ -1,6 +1,5 @@
 import { Component, State, Listen, ComponentWillLoad, ComponentDidUnload, Prop } from '@stencil/core';
 import firebase from 'firebase/app';
-import 'firebase/functions';
 
 @Component({
   tag: 'app-header',

@@ -1,4 +1,4 @@
-import { Component, State } from "@stencil/core";
+import { Component, State, Prop } from "@stencil/core";
 import 'rss-parser/dist/rss-parser.min';
 
 declare global {
@@ -21,14 +21,17 @@ interface BlogPost {
 })
 export class AppBlogArea {
   @State() blogPosts: BlogPost[];
+  @Prop({ context: 'isServer' }) isServer: boolean;
   async componentWillLoad() {
-    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-    const parser = new window.RSSParser();
-    const feed: {
-      title: string,
-      items: BlogPost[]
-    } = await parser.parseURL(CORS_PROXY + 'https://medium.com/feed/valuag');
-    this.blogPosts = feed.items;
+    if (!this.isServer) {
+      const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+      const parser = new window.RSSParser();
+      const feed: {
+        title: string,
+        items: BlogPost[]
+      } = await parser.parseURL(CORS_PROXY + 'https://medium.com/feed/valuag');
+      this.blogPosts = feed.items;
+    }
   }
   decodeContent(contentEncoded: string) {
     return contentEncoded.replace('<![CDATA[', '').replace(']]>', '');

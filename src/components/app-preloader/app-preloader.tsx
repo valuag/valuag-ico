@@ -19,7 +19,7 @@ export class AppPreloader {
     return (
       <div id="preloader">
         <div class="preload-content">
-          <div id="dream-load"></div>
+          <div id="dream-load" />
         </div>
       </div>
     );

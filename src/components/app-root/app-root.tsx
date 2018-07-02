@@ -1,6 +1,7 @@
 import { Component, Prop, ComponentWillLoad } from '@stencil/core';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import 'firebase/functions';
 import 'wowjs';
 
 @Component({
@@ -9,13 +10,19 @@ import 'wowjs';
 })
 export class AppRoot implements ComponentWillLoad {
   @Prop({ context: 'isServer' }) private isServer: boolean;
-  async componentWillLoad() {
+  componentWillLoad() {
     if (!this.isServer) {
       const WOW = window['WOW'];
       new WOW().init();
       // Initialize Firebase
-      const response = await fetch('/__/firebase/init.json');
-      const config = await response.json();
+      const config = {
+        apiKey: "AIzaSyAKZoAyFVar3MM260goBsZ8COdbMcbgIAE",
+        authDomain: "valuag-ico.firebaseapp.com",
+        databaseURL: "https://valuag-ico.firebaseio.com",
+        projectId: "valuag-ico",
+        storageBucket: "valuag-ico.appspot.com",
+        messagingSenderId: "994045621453"
+      };
       firebase.initializeApp(config);
     }
   }
