@@ -224,11 +224,11 @@
     uglify-es "3.3.9"
     workbox-build "^3.1.0"
 
-"@stencil/router@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.1.tgz#f4eb5d04f11549906c88039902b5d61f0baf91f7"
+"@stencil/router@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.2.tgz#d56673562f94e7e67f4a6e7216cc748596e1ebf9"
   dependencies:
-    "@stencil/state-tunnel" "0.0.6"
+    "@stencil/state-tunnel" "0.0.7"
 
 "@stencil/sass@0.0.5":
   version "0.0.5"
@@ -236,9 +236,9 @@
   dependencies:
     node-sass "4.9.0"
 
-"@stencil/state-tunnel@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.6.tgz#399df6f065552a438101823adead8fbd06a0a0fc"
+"@stencil/state-tunnel@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.7.tgz#e65152a6c68a1ba34479b1befe9515ed4ce0ba77"
 
 "@types/estree@0.0.39":
   version "0.0.39"
@@ -6026,7 +6026,7 @@ router@^1.3.1:
     setprototypeof "1.1.0"
     utils-merge "1.0.1"
 
-rss-parser@^3.4.2:
+rss-parser@3.4.2:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-3.4.2.tgz#a7d88b5676864845e6b9c3a84e09a00478c75306"
   dependencies:
