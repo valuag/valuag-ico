@@ -49,24 +49,6 @@ export class AppTeamArea {
             <div class="col-12 col-sm-6 col-lg-3">
               <div class="single-team-member wow fadeInUp" data-wow-delay="0.4s">
                 <div class="team-member-thumb">
-                  <img src="https://media.licdn.com/dms/image/C5103AQHKQYWkqOAjAg/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=81d0iIRq5Hy9_ReMItOtMaMpvdsL2c_eWCd3FFU0rdA" class="center-block" alt="" />
-                </div>
-                <div class="team-info">
-                  <h5>Ahmet Furkan TEKE</h5>
-                  <p>Chief Technology Officer</p>
-                </div>
-                <div class="team-social-icon">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single-team-member wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-member-thumb">
                   <img src="https://media.licdn.com/dms/image/C4E03AQFZxLAF2y0wHQ/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=4W_T3UOMG7vntoHJsNXdEzZx1OZ6yDEokFKB0dwkiOs" class="center-block" alt="" />
                 </div>
                 <div class="team-info">
@@ -90,42 +72,6 @@ export class AppTeamArea {
                 <div class="team-info">
                   <h5>Arda TANRIKULU</h5>
                   <p>Full Stack Engineer</p>
-                </div>
-                <div class="team-social-icon">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single-team-member wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-member-thumb">
-                  <img src="https://media.licdn.com/dms/image/C4D03AQGGMMPral15Qg/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=H1PbcX_J_-pV9rDW-DXBjXzlPxRl8nwiEvlRgXN6vbI" class="center-block" alt="" />
-                </div>
-                <div class="team-info">
-                  <h5>Kerem URMAN</h5>
-                  <p>Software Engineer</p>
-                </div>
-                <div class="team-social-icon">
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-skype"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-              <div class="single-team-member wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-member-thumb">
-                  <img src="https://media.licdn.com/dms/image/C5603AQEvw1LTMAwLHg/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=4eMorP-INyvUhu569Q3Zfnl64QAepGz4dC2pTywsnBY" class="center-block" alt="" />
-                </div>
-                <div class="team-info">
-                  <h5>Ali Kemal TANRIVERDI</h5>
-                  <p>Software Engineer</p>
                 </div>
                 <div class="team-social-icon">
                   <a href="#"><i class="fa fa-twitter"></i></a>
