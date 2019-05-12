@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "firebase-admin": "5.12.1",
-    "firebase-functions": "1.1.0",
+    "firebase-functions": "2.3.1",
     "md5": "2.2.1",
     "qrcode": "1.2.0",
     "speakeasy": "2.0.0",
