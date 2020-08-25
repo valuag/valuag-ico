@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/jest": "23.1.1",
     "browser-sync": "2.24.5",
-    "firebase-tools": "3.19.0",
+    "firebase-tools": "3.19.3",
     "jest": "23.1.0"
   },
   "repository": "git+https://github.com/valuag/valuag-ico.git",
