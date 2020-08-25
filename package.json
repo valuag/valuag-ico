@@ -24,7 +24,7 @@
   "dependencies": {
     "@icon/themify-icons": "1.0.6",
     "@stencil/core": "0.10.0-9",
-    "@stencil/router": "0.2.3",
+    "@stencil/router": "0.3.3",
     "@stencil/sass": "0.0.5",
     "bootstrap": "4.1.2",
     "firebase": "5.2.0",
