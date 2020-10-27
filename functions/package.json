@@ -19,7 +19,7 @@
     "md5": "2.2.1",
     "qrcode": "1.2.0",
     "speakeasy": "2.0.0",
-    "tslib": "1.9.3"
+    "tslib": "1.14.1"
   },
   "devDependencies": {
     "@types/md5": "2.1.32",
