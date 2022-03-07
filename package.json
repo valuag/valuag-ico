@@ -35,10 +35,10 @@
     "wowjs": "1.1.3"
   },
   "devDependencies": {
-    "@types/jest": "23.1.1",
+    "@types/jest": "23.3.14",
     "browser-sync": "2.24.5",
     "firebase-tools": "3.19.0",
-    "jest": "23.1.0"
+    "jest": "23.6.0"
   },
   "repository": "git+https://github.com/valuag/valuag-ico.git",
   "author": "ValuAg Team",
