@@ -224,11 +224,12 @@
     uglify-es "3.3.9"
     workbox-build "^3.1.0"
 
-"@stencil/router@0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.3.tgz#24490ac1c827fe568bf662beb1fbc8ee4bf5f48d"
+"@stencil/router@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-1.0.1.tgz#f95bcc67ef8d832c16a117487a277d4ce2973d2a"
+  integrity sha512-ZMholl1BE+glNAc/8pcEb9RYkeH0XETxsJbx6D7f3azTmaTXqKYty1IACP/3BtVjuimpfLdxQJ+J95wKmnYBtA==
   dependencies:
-    "@stencil/state-tunnel" "0.0.7"
+    "@stencil/state-tunnel" "^1.0.1"
 
 "@stencil/sass@0.0.5":
   version "0.0.5"
@@ -236,9 +237,10 @@
   dependencies:
     node-sass "4.9.0"
 
-"@stencil/state-tunnel@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.7.tgz#e65152a6c68a1ba34479b1befe9515ed4ce0ba77"
+"@stencil/state-tunnel@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-1.0.1.tgz#21324f494ad719732505c8134099e415ac4c3c81"
+  integrity sha512-DYG8uROgL9hkjVTCtCfRBb0d3FwpiFB0muRrNZQ2X1Qo5hxMuNNji76/ILddqeq0AfgkKCW82xrMPDpy+rNIhQ==
 
 "@types/estree@0.0.39":
   version "0.0.39"
