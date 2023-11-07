@@ -17,13 +17,13 @@
     "firebase-admin": "5.12.1",
     "firebase-functions": "1.1.0",
     "md5": "2.2.1",
-    "qrcode": "1.2.0",
+    "qrcode": "1.5.3",
     "speakeasy": "2.0.0",
     "tslib": "1.9.3"
   },
   "devDependencies": {
     "@types/md5": "2.1.32",
-    "@types/qrcode": "1.2.0",
+    "@types/qrcode": "1.5.5",
     "@types/speakeasy": "2.0.2"
   }
 }
